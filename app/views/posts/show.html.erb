@@ -1,0 +1,9 @@
+<h1><%= @post.title %></h1>
+<div class="post">
+  <div class="timestamp">Posted at <%= std_format_date(@post.created_at) %></div>
+  <div class="body"><%= @post.body %></div>
+</div>
+<div class="comments">
+  <h2>Comments</h2>
+  
+</div>
