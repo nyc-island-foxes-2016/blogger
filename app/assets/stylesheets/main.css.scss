@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+form#new_user {
+  label {
+    display: inline-block;
+    width: 150px;
+  }
+  div {
+    padding: 4px 0;
+  }
+}
