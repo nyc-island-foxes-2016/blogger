@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :posts, only: [:index]
   resources :users, only: [:new, :create]
+  resource :session, only: [:new, :create]
   get 'register' => 'users#new'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<% if current_user %>
+  <div>  
+    <%= current_user.username %> is logged in
+  </div>
+<% end %>
+
+
 <%= yield %>
 
 </body>
