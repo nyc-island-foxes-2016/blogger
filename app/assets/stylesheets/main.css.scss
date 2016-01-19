@@ -11,3 +11,10 @@ form#new_user {
     padding: 4px 0;
   }
 }
+
+.field_with_errors {
+  display: inline;
+  input {
+    outline: 1px solid red;
+  }
+}
