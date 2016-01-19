@@ -26,3 +26,12 @@ form {
     color: #EEBBBB;
   }
 }
+
+#flash-container {
+  .flash-notice {
+    color: green;
+  }
+  .flash-alert {
+    color: red;
+  }
+}

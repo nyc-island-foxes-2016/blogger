@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts, only: [:index, :show]
+  resources :posts, only: [:index, :show] do
+    resources :comments, only: [:create, :show]
+  end
   resources :users, only: [:new, :create]
   resource :session, only: [:new, :create]
   get 'register' => 'users#new'

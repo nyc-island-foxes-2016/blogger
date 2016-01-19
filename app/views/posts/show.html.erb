@@ -7,3 +7,21 @@
   <h2>Comments</h2>
   <%= render @post.comments %>
 </div>
+
+<% if logged_in? %>
+  <h3>Add your comment</h3>
+
+  <%= form_for [@post, @comment] do |f| %>
+  <fieldset>
+    <div>
+      <%= f.label :content %>
+      <%= f.text_area :content, rows: 5, cols:80 %>
+    </div>
+    <div>
+      <%= label_tag '' %>
+      <%= f.submit %>
+    </div>
+  </fieldset>
+  <% end %>
+  
+<% end %>
